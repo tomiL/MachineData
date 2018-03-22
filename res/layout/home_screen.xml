@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/top_bar"
+        android:scaleY="0.5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/dataButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/home_buttons_horizontal_margin"
+                android:layout_marginTop="100dp"
+                android:drawableTop="@drawable/buttongraphs"
+                android:onClick="dataScreen"
+                android:text="@string/button_text_graphs"
+                android:textSize="@dimen/home_buttons_text_size" />
+
+            <Button
+                android:id="@+id/dataButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/dataButton"
+                android:layout_alignBottom="@+id/dataButton"
+                android:layout_marginLeft="@dimen/home_buttons_horizontal_margin"
+                android:layout_toRightOf="@+id/dataButton"
+                android:drawableTop="@drawable/buttonbars"
+                android:onClick="rawDataScreen"
+                android:text="@string/button_text_bars"
+                android:textSize="@dimen/home_buttons_text_size" />
+
+            <Button
+                android:id="@+id/dataButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/dataButton2"
+                android:layout_alignBottom="@+id/dataButton2"
+                android:layout_marginLeft="@dimen/home_buttons_horizontal_margin"
+                android:layout_toRightOf="@+id/dataButton2"
+                android:drawableTop="@drawable/buttondata"
+                android:text="@string/button_text_data"
+                android:textSize="@dimen/home_buttons_text_size" />
+            
+            <Button
+                android:id="@+id/dataButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/dataButton3"
+                android:layout_alignBottom="@+id/dataButton3"
+                android:layout_marginLeft="@dimen/home_buttons_horizontal_margin"
+                android:layout_toRightOf="@+id/dataButton3"
+                android:drawableTop="@drawable/buttondata"
+                android:text="@string/button_text_data"
+                android:textSize="@dimen/home_buttons_text_size" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

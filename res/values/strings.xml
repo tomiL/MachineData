@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MachineData</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_text_home">Home</string>
+    <string name="button_text_data">Data</string>
+    <string name="button_text_back">Back</string>
+    <string name="button_text_settings">Settings</string>
+    <string name="button_text_debug1">Debug 1: Start/Stop</string>
+    <string name="button_text_debug2">Debug 2: Clear data</string>
+    <string name="button_text_graphs">Data Graphs</string>
+    <string name="button_text_bars">Data Values</string>
+    <string name="settings_title">Settings</string><string name="settings_ok">OK</string>
+    <string name="settings_cancel">Cancel</string><string name="settings_restore_defaults">Restore Defaults</string>
+    
+    <string name="settings_time_per_pix">Time per pixel in graph (millisecond)</string>
+    <string name="settings_query_interval">Query interval (millisecond)</string>
+    <string name="settings_data_source">Data source</string>
+    <string name="settings_sample_data">Internal sample</string>
+    <string name="settings_wlan">Wireless network</string>
+    <string name="placeholder_value">value</string>
+    
+
+</resources>

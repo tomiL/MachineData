@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/settingsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/buttonback"
+        android:onClick="homeScreen"
+        android:text="@string/button_text_back" />
+
+     <Button
+        android:id="@+id/debugButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/backButton"
+        android:onClick="updateTest"
+        android:text="@string/button_text_debug1" />
+
+    <Button
+        android:id="@+id/debugButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/backButton"
+        android:layout_below="@+id/debugButton1"
+        android:onClick="clearDataTest"
+        android:text="@string/button_text_debug2" />
+    
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/settingsButton"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/settingsButton"
+        android:drawableTop="@drawable/buttonhome"
+        android:onClick="homeScreen"
+        android:text="@string/button_text_home" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:drawableTop="@drawable/button_settings"
+        android:onClick="settingsScreen"
+        android:text="@string/button_text_settings" />
+
+</RelativeLayout>

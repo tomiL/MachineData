@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="time_per_pixel" type="integer" format="integer">50</item>
+    <item name="query_interval" format="integer" type="integer">200</item>
+    <item name="max_time_per_pixel" format="integer" type="integer">500</item>
+    <item name="max_query_interval" format="integer" type="integer">1000</item>
+    <item name="min_time_per_pixel" format="integer" type="integer">10</item>
+    <item name="min_query_interval" format="integer" type="integer">10</item>
+    
+</resources>

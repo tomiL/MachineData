@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/settingsTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="@string/settings_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/timePerPixText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingsTitleText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/settings_screen_item_height"
+        android:text="@string/settings_time_per_pix"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <SeekBar
+        android:id="@+id/timePerPixSeekBar"
+        android:layout_width="@dimen/settings_screen_bar_width"
+        android:layout_height="@dimen/settings_screen_item_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timePerPixText" />
+
+    <TextView
+        android:id="@+id/timePerPixValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/timePerPixSeekBar"
+        android:layout_toRightOf="@id/timePerPixSeekBar"
+        android:text="@string/placeholder_value"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/queryIntervalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePerPixSeekBar"
+        android:layout_centerInParent="true"
+        android:text="@string/settings_query_interval"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <SeekBar
+        android:id="@+id/queryIntervalSeekBar"
+        android:layout_width="@dimen/settings_screen_bar_width"
+        android:layout_height="@dimen/settings_screen_item_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/queryIntervalText" />
+
+    <TextView
+        android:id="@+id/queryIntervalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/queryIntervalSeekBar"
+        android:layout_toRightOf="@+id/queryIntervalSeekBar"
+        android:text="@string/placeholder_value"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    <TextView
+        android:id="@+id/dataSourceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/queryIntervalSeekBar"
+        android:layout_centerInParent="true"
+        android:text="@string/settings_data_source"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+        android:id="@+id/dataSourceRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dataSourceText"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/settings_screen_item_height"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/sampleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:checked="true"
+            android:text="@string/settings_sample_data" />
+
+        <RadioButton
+            android:id="@+id/wlanRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:text="@string/settings_wlan" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/restoreDefaultsButton"
+        android:layout_width="@dimen/settings_screen_button_width"
+        android:layout_height="@dimen/settings_screen_item_height"
+        android:layout_alignTop="@+id/settingsOkButton"
+        android:layout_centerInParent="true"
+        android:onClick="restoreDefaults"
+        android:text="@string/settings_restore_defaults" />
+
+    <Button
+        android:id="@+id/settingsOkButton"
+        android:layout_width="@dimen/settings_screen_button_width"
+        android:layout_height="@dimen/settings_screen_item_height"
+        android:layout_alignTop="@+id/settingsCancelButton"
+        android:layout_alignParentRight="true"
+        android:onClick="close"
+        android:text="@string/settings_ok" />
+
+    <Button
+        android:id="@+id/settingsCancelButton"
+        android:layout_width="@dimen/settings_screen_button_width"
+        android:layout_height="@dimen/settings_screen_item_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dataSourceRadioGroup"
+        android:onClick="cancel"
+        android:text="@string/settings_cancel" />
+
+</RelativeLayout>

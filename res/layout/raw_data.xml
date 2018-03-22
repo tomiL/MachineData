@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/rawTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/raw_data_text_size" />
+
+    <com.example.machinedata.RawDataDisplay
+        android:id="@+id/rawDataDisplay"
+        android:layout_width="@dimen/raw_data_bar_width"
+        android:layout_height="@dimen/raw_data_text_size"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

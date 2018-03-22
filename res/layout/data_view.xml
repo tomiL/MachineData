@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/graphTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:maxWidth="200dp"
+        android:text="Title Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/data_graph_title_text_size" />
+
+    <TextView
+        android:id="@+id/graphValueTextTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/dataGraphScrollView"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/data_graph_values_text_size" />
+
+    <TextView
+        android:id="@+id/graphValueTextMidTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/dataGraphScrollView"
+        android:layout_below="@+id/graphValueTextTop"
+        android:layout_marginTop="@dimen/data_graph_vertical_value_margin"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/data_graph_values_text_size" />
+
+    <TextView
+        android:id="@+id/graphValueTextMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/dataGraphScrollView"
+        android:layout_below="@+id/graphValueTextMidTop"
+        android:layout_marginTop="@dimen/data_graph_vertical_value_margin"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/data_graph_values_text_size" />
+
+    <TextView
+        android:id="@+id/graphValueTextMidLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/dataGraphScrollView"
+        android:layout_below="@+id/graphValueTextMid"
+        android:layout_marginTop="@dimen/data_graph_vertical_value_margin"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/data_graph_values_text_size" />
+
+    <TextView
+        android:id="@+id/graphValueTextLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/graphValueTextMidLow"
+        android:layout_toLeftOf="@+id/dataGraphScrollView"
+        android:layout_marginTop="@dimen/data_graph_vertical_value_margin"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/data_graph_values_text_size" />
+
+    <HorizontalScrollView
+        android:id="@+id/dataGraphScrollView"
+        android:layout_width="@dimen/data_graph_display_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.example.machinedata.DataGraphDisplay
+                android:id="@+id/dataGraphDisplay"
+                android:layout_width="@dimen/data_graph_total_width"
+                android:layout_height="@dimen/data_graph_display_height" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
